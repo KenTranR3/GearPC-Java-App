@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="592.0" maxWidth="900.0" prefHeight="592.0" prefWidth="900.0" style="-fx-background-color: #fc0202;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.InfoUserController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="900.0" style="-fx-background-color: #fc0202;">
+         <children>
+            <Pane layoutX="25.0" layoutY="71.0" prefHeight="362.0" prefWidth="851.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+               <children>
+                  <Pane layoutX="1.0" layoutY="1.0" prefHeight="281.0" prefWidth="413.0">
+                     <children>
+                        <Label alignment="BASELINE_CENTER" layoutX="25.0" layoutY="14.0" prefHeight="35.0" prefWidth="363.0" text="Thông tin cá nhân">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Account" layoutX="25.0" layoutY="123.0" prefHeight="36.0" prefWidth="363.0" promptText="User name" />
+                        <Label fx:id="IDUser" layoutX="25.0" layoutY="69.0" prefHeight="36.0" prefWidth="363.0" style="-fx-background-color: #cccccc; -fx-background-radius: 2;" text="ID User" />
+                        <TextField fx:id="NameUser" layoutX="25.0" layoutY="176.0" prefHeight="36.0" prefWidth="363.0" promptText="Promt text" />
+                        <TextField fx:id="Password" layoutX="25.0" layoutY="231.0" prefHeight="36.0" prefWidth="363.0" promptText="Password" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="433.0" prefHeight="281.0" prefWidth="418.0">
+                     <children>
+                        <TextField fx:id="CardUser" layoutX="28.0" layoutY="231.0" prefHeight="36.0" prefWidth="363.0" promptText="Card User" />
+                        <TextField fx:id="AddressUser" layoutX="28.0" layoutY="178.0" prefHeight="36.0" prefWidth="363.0" promptText="Address " />
+                        <TextField fx:id="PhoneUser" layoutX="28.0" layoutY="123.0" prefHeight="36.0" prefWidth="363.0" promptText="Phone number" />
+                        <Label alignment="BASELINE_CENTER" layoutX="28.0" layoutY="14.0" prefHeight="35.0" prefWidth="363.0" text="Điện thoại, địa chỉ, số tài khoản ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button layoutX="244.0" layoutY="312.0" mnemonicParsing="false" onAction="#ChangeInformation" prefHeight="36.0" prefWidth="363.0" style="-fx-background-color: #fc0202;" text="Save Changes" textFill="WHITE" />
+                  <Separator layoutX="423.0" layoutY="9.0" orientation="VERTICAL" prefHeight="260.0" prefWidth="8.0" />
+                  <Button layoutX="43.0" layoutY="312.0" mnemonicParsing="false" onAction="#SwitchToDashboard" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #fc0202;" text="Cancel Changes" textFill="WHITE" />
+                  <Label fx:id="Log" layoutX="27.0" layoutY="275.0" prefHeight="26.0" prefWidth="798.0" />
+                  <Button layoutX="654.0" layoutY="312.0" mnemonicParsing="false" onAction="#SwitchToSignInScene" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #fc0202;" text="Log out" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane prefHeight="86.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#fc0202" layoutX="35.0" layoutY="44.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="62.0" layoutY="26.0" text="GEAR PC" textFill="#fc0202">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="26.0" prefHeight="35.0" prefWidth="210.0" text="Thông tin tài khoản">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="27.0" text="G" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

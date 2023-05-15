@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane style="-fx-background-color: #fc0202;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ClientHistoryDashboardController">
+   <top>
+      <HBox style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="82.0" maxWidth="1200.0" prefHeight="82.0" prefWidth="735.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label layoutX="62.0" layoutY="26.0" onMouseClicked="#SwitchToDashboard" prefHeight="42.0" prefWidth="151.0" text="GEAR PC" textFill="#fc0202">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#fc0202" layoutX="35.0" layoutY="44.0" onMouseClicked="#SwitchToDashboard" radius="21.0" stroke="#150e0e" strokeType="INSIDE" />
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="27.0" onMouseClicked="#SwitchToDashboard" prefHeight="35.0" prefWidth="22.0" text="G" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="201.0" layoutY="30.0" prefHeight="17.0" prefWidth="498.0" text="Purchase History">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="170.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="clientName" mnemonicParsing="false" onAction="#SwitchToUserInfo" prefHeight="44.0" prefWidth="154.0" text="Button">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane maxHeight="800.0" maxWidth="900.0" prefHeight="494.0" prefWidth="900.0" style="-fx-background-color: #fc0202;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="27.0" layoutY="92.0" prefHeight="383.0" prefWidth="855.0">
+              <columns>
+                <TableColumn prefWidth="77.0" text="ID of order" />
+                <TableColumn prefWidth="116.0" text="Name of goods" />
+                  <TableColumn prefWidth="61.0" text="Quantity" />
+                  <TableColumn prefWidth="102.0" text="Total price" />
+                  <TableColumn prefWidth="155.0" text="Address" />
+                  <TableColumn prefWidth="74.0" text="Payment&#10;method" />
+                  <TableColumn prefWidth="115.0" text="Bank account&#10;(if you choose &#10;e-payment)&#10;" />
+                  <TableColumn text="Status" />
+                  <TableColumn text="Cancel?" />
+              </columns>
+            </TableView>
+            <ScrollPane layoutX="27.0" layoutY="143.0" maxWidth="1500.0" prefHeight="332.0" prefWidth="855.0" />
+            <VBox fx:id="box" layoutX="27.0" layoutY="144.0" prefHeight="50.0" prefWidth="769.0" />
+            <Label fx:id="IDUser" layoutX="201.0" layoutY="30.0" prefHeight="42.0" prefWidth="498.0" style="-fx-background-color: #ffffff;" text="IDUser">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>

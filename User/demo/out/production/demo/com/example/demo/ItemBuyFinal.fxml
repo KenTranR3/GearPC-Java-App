@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxWidth="1100.0" prefHeight="525.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ItemBuyController">
+   <left>
+      <HBox prefHeight="443.0" prefWidth="444.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="24.0" style="-fx-background-color: #f1f1f1;" />
+            <VBox maxHeight="450.0" prefHeight="441.0" prefWidth="412.0" style="-fx-background-color: #f1f1f1; -fx-background-radius: 15;">
+               <children>
+                  <AnchorPane prefHeight="262.0" prefWidth="330.0">
+                     <children>
+                        <ImageView fx:id="ItemBuyItemImage" fitHeight="272.0" fitWidth="254.0" layoutX="41.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="https://www.azaudio.vn/Data/Sites/1/Product/14678/azaudio-asus-zenbook-flip-s-ux371ea-hl725ws.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="35.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <Separator prefHeight="9.0" prefWidth="412.0" />
+                  <Text fx:id="ItemBuyItemDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="- Chip Core i7-1165G7 - Đáp ứng tốt mọi tác vụ văn phòng đến những tựa game nhẹ nhàng sau giờ làm" textAlignment="JUSTIFY" wrappingWidth="400.80000001192093">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin></Text>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="7.0" />
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <StackPane prefHeight="266.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="460.0" prefWidth="425.0" style="-fx-border-color: #ffffff;">
+               <content>
+                  <HBox maxHeight="800.0" maxWidth="900.0" prefHeight="442.0" prefWidth="652.0" style="-fx-background-radius: 15;">
+                     <children>
+                        <VBox maxHeight="400.0" maxWidth="664.0" prefHeight="400.0" prefWidth="664.0" style="-fx-background-radius: 15;">
+                           <children>
+                              <Label fx:id="ItemBuyItemPrice" alignment="BASELINE_CENTER" prefHeight="50.0" prefWidth="655.0" text="43.000.000 đ" textFill="#fc0202">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="205.0">
+                                 <children>
+                                    <Label layoutX="18.0" layoutY="41.0" text="Số lượng">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="SoLuong" layoutX="36.0" layoutY="67.0" style="-fx-border-radius: 10; -fx-border-color: #A1A1A1;" />
+                                 </children>
+                              </AnchorPane>
+                              <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#BuyItem" prefHeight="54.0" prefWidth="640.0" style="-fx-background-color: #fc0202; -fx-background-radius: 15;" text="CHỌN MUA" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Pane layoutX="10.0" layoutY="195.0" prefHeight="7.0" prefWidth="294.0" />
+                              <Button alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#SwitchToDashBoard" prefHeight="54.0" prefWidth="635.0" style="-fx-background-color: #485FC7; -fx-background-radius: 15;" text="XEM THÊM SẢN PHẨM KHÁC" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <VBox prefHeight="65.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="10.0" layoutY="61.0" opacity="0.0" prefHeight="15.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" />
+            <Label fx:id="ItemBuyItemName" prefHeight="43.0" prefWidth="558.0" style="-fx-background-color: #F1F1F1;" text=" Laptop Asus Zenbook Flip S UX371EA-HL725WS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="23.0" />
+               </VBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Separator opacity="0.0" prefHeight="15.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

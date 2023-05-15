@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleNodeClick" prefHeight="206.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ItemController">
+   <children>
+      <ImageView fx:id="displayItemImage" fitHeight="165.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="displayItemName" prefHeight="17.0" prefWidth="238.0" text="Label">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin></Label>
+      <Label fx:id="displayItemPrice" layoutX="10.0" layoutY="175.0" prefHeight="17.0" prefWidth="238.0" text="Label">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin></Label>
+   </children>
+</VBox>

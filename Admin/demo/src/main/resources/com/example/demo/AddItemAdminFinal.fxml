@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="498.0" maxWidth="268.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ItemController">
+   <children>
+      <BorderPane prefHeight="234.0" prefWidth="246.0" style="-fx-border-color: #0A0A0A;">
+         <bottom>
+            <Label text="Preview" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </bottom>
+         <center>
+            <ImageView fx:id="displayItemImage" fitHeight="205.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Pane prefHeight="266.0" prefWidth="268.0">
+         <children>
+            <TextField fx:id="linkImage" alignment="CENTER" layoutX="60.0" layoutY="1.0" promptText="Link Ảnh" />
+            <TextArea fx:id="descItem" layoutX="60.0" layoutY="112.0" prefHeight="56.0" prefWidth="149.0" promptText="Mô tả" />
+            <TextField fx:id="priceItem" alignment="CENTER" layoutX="60.0" layoutY="71.0" promptText="Giá tiền" />
+            <Button layoutX="107.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: #FC0202;" text="Thêm Sản Phẩm" textFill="WHITE" />
+            <TextField fx:id="ItemName" alignment="CENTER" layoutX="60.0" layoutY="38.0" promptText="Tên sản phẩm" />
+            <Button layoutX="60.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: #FC0202;" text="Hủy" textFill="WHITE" />
+            <ComboBox fx:id="TagItem" layoutX="59.0" layoutY="178.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
